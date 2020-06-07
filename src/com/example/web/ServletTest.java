@@ -17,10 +17,11 @@ public class ServletTest extends HttpServlet
 	protected void service(HttpServletRequest req, HttpServletResponse res) 
 			throws ServletException, IOException
 	{
-		
+		res.setCharacterEncoding("UTF-8");
+		res.setContentType("text/html; charset=UTF-8");
 		
 		//서블릿 출력도구 HttpServletResponse 사용하여 출력하기
 		PrintWriter out =  res.getWriter();
-		out.println("hello servlet");
+		out.println("한글 출력해보기");
 	}
 }
