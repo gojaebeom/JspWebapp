@@ -17,10 +17,9 @@ public class PostTest extends HttpServlet
 	protected void service(HttpServletRequest req, HttpServletResponse res) 
 			throws ServletException, IOException 
 	{
-		res.setCharacterEncoding("UTF-8");
-		res.setContentType("text/html; charset=UTF-8");
 		
-		req.setCharacterEncoding("UTF-8");
+//		
+//		req.setCharacterEncoding("UTF-8");
 		String title = req.getParameter("title");
 		String content = req.getParameter("content");
 		
