@@ -15,9 +15,8 @@
 
 ## chepter 04 : 쿼리스트링
 쿼리스트링이 오는 방식은 다음과 같이 여러가지가 있다
-?count=3 -> 문자열 3 전달
-?count= -> 빈 문자열 전달
-? -> null 전달
+- ?count=3 -> 문자열 3 전달
+- ?count= -> 빈 문자열 전달
+- ? -> null 전달
 
-index.html에서 form을 통해 get요청으로 count 값을 보내주면 그만큼 문구를 찍는 예제 작성
-쿼리값이 없을 때 nullpoint 오류를 방지하기 위해 조건을 걸어주어야함
+index.html에서 form을 통해 get요청으로 count 값을 보내주면 그만큼 문구를 찍는 예제 작성(쿼리값이 없을 때 nullpoint 오류를 방지하기 위해 조건을 걸어줌)
