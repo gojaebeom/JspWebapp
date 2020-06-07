@@ -9,3 +9,6 @@
 - 조건으로 web.xml의 root element인 metadata-complete의 값을 false로 바꿔주어야 함 
 - true : servlet 관련 설정을 web.xml파일 내부에서 처리
 - false : servlet 관련 설정이 web.xml 파일 내부에 존재하지 않으면 다른 곳도 찾음
+
+## chepter 03
+- 한글 인코딩 하기
