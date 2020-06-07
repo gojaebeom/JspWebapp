@@ -22,6 +22,20 @@ public class ServletTest extends HttpServlet
 		
 		//서블릿 출력도구 HttpServletResponse 사용하여 출력하기
 		PrintWriter out =  res.getWriter();
-		out.println("한글 출력해보기");
+		
+		//파라미터로 count 쿼리스트링 값 받기
+		String count_ = req.getParameter("count");
+		
+		int count = 1;
+		
+		//count_ 값이 널이 아니고 빈문자열도 아닐 경우 count 변수에 정수형으로 변환하여 대입 (nullpont 오류 방지)
+		if(count_ != null && !count_.equals(""))
+			count = Integer.parseInt(count_);
+		
+			
+		for(int i = 0; i < count; i++)
+		{
+			out.println("한글 출력해보기");
+		}
 	}
 }
