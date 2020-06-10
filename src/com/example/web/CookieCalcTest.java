@@ -58,9 +58,11 @@ public class CookieCalcTest extends HttpServlet
 		{
 			Cookie valueCookie = new Cookie("value", v_);
 			Cookie opCookie = new Cookie("op", op_);
+			valueCookie.setPath("/");
+			opCookie.setPath("/");
+			
 			res.addCookie(valueCookie);
 			res.addCookie(opCookie);
-
 		}
 		
 	}

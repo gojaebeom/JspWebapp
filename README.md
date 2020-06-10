@@ -31,4 +31,4 @@
 - 상태유지의 방법으로 application, session, cookie 등이 있다. 
 - 각자 한번씩 사용해본다.
 - application은 그 값이 전역적으로 사용됨 프로세스간 값 공유가 가능
-- session은 해당 사용자 기준으로 값이 사용됨 
+- session은 해당 사용자를 구분한다
